@@ -11,11 +11,18 @@ type Props = {
     buttons: string
 };
 export const Dock = (props: Props) => {
+
+    const [value, setValue] = React.useState('personal');
+
+    const handleChange = (event: React.ChangeEvent<{}>, newValue: string) => {
+        setValue(newValue);
+    };
+
     return (
-        <BottomNavigation className={"nav"}>
-            <BottomNavigationAction className={'button'} label="Folder" value="folder" icon={<FolderIcon/>}/>
-            <BottomNavigationAction className={'button'} label="Folder" value="folder" icon={<PersonIcon/>}/>
-            <BottomNavigationAction className={'button'} label="Folder" value="folder" icon={<SubjectIcon/>}/>
+        <BottomNavigation className={"nav"} value={value} onChange={handleChange}>
+            <BottomNavigationAction className={'button'} label="Folder" value="projects" icon={<FolderIcon/>}/>
+            <BottomNavigationAction className={'button'} label="Folder" value="personal" icon={<PersonIcon/>}/>
+            <BottomNavigationAction className={'button'} label="Folder" value="resume" icon={<SubjectIcon/>}/>
         </BottomNavigation>
     );
 };
