@@ -20,9 +20,9 @@ export const Dock = (props: Props) => {
 
     return (
         <BottomNavigation className={"nav"} value={value} onChange={handleChange}>
-            <BottomNavigationAction className={'button'} label="Folder" value="projects" icon={<FolderIcon/>}/>
-            <BottomNavigationAction className={'button'} label="Folder" value="personal" icon={<PersonIcon/>}/>
-            <BottomNavigationAction className={'button'} label="Folder" value="resume" icon={<SubjectIcon/>}/>
+            <BottomNavigationAction className={'button'} label="Projects" value="projects" icon={<FolderIcon/>}/>
+            <BottomNavigationAction className={'button'} label="Info" value="personal" icon={<PersonIcon/>}/>
+            <BottomNavigationAction className={'button'} label="Resume" value="resume" icon={<SubjectIcon/>}/>
         </BottomNavigation>
     );
 };
