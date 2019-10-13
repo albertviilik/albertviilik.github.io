@@ -1,0 +1,10 @@
+.resume_area {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -40%);
+}
+
+.embedded {
+    height: 80vh;
+}
