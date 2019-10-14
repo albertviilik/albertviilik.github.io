@@ -1,5 +1,5 @@
 export const PAGE_NAMES = {
-    PROJECTS: 'projects',
-    INFO: 'info',
-    RESUME: 'resume',
+    PROJECTS: 'Projects',
+    INFO: 'Info',
+    RESUME: 'Resume',
 };
